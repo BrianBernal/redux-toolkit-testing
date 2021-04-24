@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import CounterConnect from './components/counter-connect/CounterConnect';
+import CounterUseSelector from './components/counter-use-selector/CounterUseSelector';
 
 const Heading = ({ title }) => (
   <div style={{ display: "flex", alignItems: "center" }}>
@@ -18,9 +19,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Heading title="useSelector hook" />
+        <CounterUseSelector />
         <Heading title="Connect" />
         <CounterConnect />
-        <Heading title="useSelector hook" />
       </header>
     </div>
   );

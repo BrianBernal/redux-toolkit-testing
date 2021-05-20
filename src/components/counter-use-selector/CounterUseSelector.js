@@ -37,6 +37,7 @@ function CounterUseSelector() {
         <input
           className={styles.textbox}
           aria-label="Set increment amount"
+          data-testid="incrementInput"
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
